@@ -60,6 +60,8 @@ body {
 
 .active .one {
     transform: rotateZ(-45deg) translate(-8px, 6px);
+    background: seagreen;
+    z-index: 100;
 }
 
 .active .two {
