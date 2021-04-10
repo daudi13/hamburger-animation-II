@@ -44,11 +44,16 @@ body {
     background: #262626;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -350px;
     border-radius: 20% 0 0 60%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: right 0.8s cubic-bezier(0.6, 0, 0, 1);
+}
+
+.active  {
+    right: 0;
 }
 
 .line {
@@ -56,6 +61,7 @@ body {
     height: 2px;
     border-radius: 2px;
     background: white;
+    transition: all 0.5s;
 }
 
 .active .one {
